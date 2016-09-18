@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+ 
+	<servlet>
+		<servlet-name>CreateTimeSheet</servlet-name>
+		<servlet-class>com.presentation.displaymgt.CreateTimeSheetServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CreateTimeSheet</servlet-name>
+		<url-pattern>/CreateTimeSheet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UserEventHandler</servlet-name>
+		<servlet-class>com.presentation.displaymgt.UserEventHandler</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserEventHandler</servlet-name>
+		<url-pattern>/UserEventHandler</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UserLoginServlet</servlet-name>
+		<servlet-class>com.presentation.displaymgt.UserLoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserLoginServlet</servlet-name>
+		<url-pattern>/UserLoginServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EmployeeNumberServlet</servlet-name>
+		<servlet-class>com.presentation.displaymgt.EmployeeNumberServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EmployeeNumberServlet</servlet-name>
+		<url-pattern>/EmployeeNumberServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UserSignupServlet</servlet-name>
+		<servlet-class>com.presentation.displaymgt.UserSignupServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserSignupServlet</servlet-name>
+		<url-pattern>/UserSignupServlet</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>login.jsp</welcome-file>
+	</welcome-file-list>
+ 
+ 
+</web-app>
